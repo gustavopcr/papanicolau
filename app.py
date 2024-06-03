@@ -71,11 +71,12 @@ def histograma():
         pimg = np.array(img.convert("RGB"))
         hist, bins = np.histogram(pimg.flatten(), 16, [0, 256])
         hist = hist / np.sum(hist)
-        plt.bar(bins[:-1], hist, width=np.diff(bins), color='gray')
+        plt.hist(bins[:-1], bins, weights=hist, color='gray', edgecolor='black')
         plt.xlabel('Tons de Cinza')
         plt.ylabel('Frequência')
         plt.title('Histograma de Tons de Cinza')
         plt.show()
+        
 def haralick():
         # Read image using mahotas
     img = mh.imread(filePath)
