@@ -76,7 +76,32 @@ def histograma():
         plt.ylabel('Frequência')
         plt.title('Histograma de Tons de Cinza')
         plt.show()
+
+def color_histogram():
+    global img
+    if img:
+        h_bins = 16
+        v_bins = 8
+        # Load the image
+        image = img.convert('HSV')
+        image_np = np.array(image)
         
+        # Split into HSV channels
+        H, S, V = image_np[:,:,0], image_np[:,:,1], image_np[:,:,2]
+        
+        # Quantize the H and V channels directly
+        H_quantized = (H * (h_bins / 256)).astype(int)
+        V_quantized = (V * (v_bins / 256)).astype(int)
+        
+        # Compute the 2D histogram
+        hist_2d, _, _ = np.histogram2d(H_quantized.flatten(), V_quantized.flatten(), bins=[h_bins, v_bins])
+        plt.imshow(hist_2d, interpolation='nearest', origin='lower', aspect='auto')
+        plt.title('2D Histogram with 16 H bins and 8 V bins')
+        plt.xlabel('Hue bins')
+        plt.ylabel('Value bins')
+        plt.colorbar()
+        plt.show()
+
 def haralick():
         # Read image using mahotas
     img = mh.imread(filePath)
@@ -187,9 +212,10 @@ menu_bar = Menu(root)
 file_menu = Menu(menu_bar, tearoff=0)
 file_menu.add_command(label="Abrir Imagem Normal", command=open_image)
 file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=converterTonsDeCinza)
-file_menu.add_command(label="Abrir Histograma da Imagem", command=histograma)
-file_menu.add_command(label="Haralick", command=haralick)
-file_menu.add_command(label="HuMoments", command=hu_moments)
+file_menu.add_command(label="Abrir Histograma de Tons de Cinza da Imagem", command=histograma)
+file_menu.add_command(label="Abrir Histograma de Cor da Imagem", command=color_histogram)
+#file_menu.add_command(label="Haralick", command=haralick)
+#file_menu.add_command(label="HuMoments", command=hu_moments)
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
 menu_bar.add_cascade(label="Menu", menu=file_menu)
