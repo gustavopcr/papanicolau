@@ -8,6 +8,7 @@ import numpy as np
 import os
 import mahotas as mh
 from sklearn.preprocessing import MinMaxScaler
+from skimage.feature import graycomatrix
 import cv2
 
 # Variavei Globais
@@ -101,6 +102,21 @@ def color_histogram():
         plt.ylabel('Value bins')
         plt.colorbar()
         plt.show()
+
+def matriz_coocorrencia():
+    global img
+    if img:
+        dists = [1, 2, 4, 8, 16, 32]
+        image = img.convert('L')
+        image = np.array(image)
+        image = (image // (256 // 16)).astype(np.uint8)
+        glcm = graycomatrix(image, distances=dists, angles=[0], levels=16, symmetric=True, normed=True)
+        for idx, d in enumerate(dists):
+            plt.figure(figsize=(8, 8))
+            plt.imshow(glcm[:, :, idx, 0], cmap='gray')
+            plt.title(f'GLCM para distância = {d}')
+            plt.colorbar()
+            plt.show()
 
 def haralick():
         # Read image using mahotas
@@ -214,6 +230,8 @@ file_menu.add_command(label="Abrir Imagem Normal", command=open_image)
 file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=converterTonsDeCinza)
 file_menu.add_command(label="Abrir Histograma de Tons de Cinza da Imagem", command=histograma)
 file_menu.add_command(label="Abrir Histograma de Cor da Imagem", command=color_histogram)
+file_menu.add_command(label="Matriz de Co-ocorrência", command=matriz_coocorrencia)
+
 #file_menu.add_command(label="Haralick", command=haralick)
 #file_menu.add_command(label="HuMoments", command=hu_moments)
 file_menu.add_separator()
