@@ -8,8 +8,8 @@ import numpy as np
 import os
 import mahotas as mh
 from sklearn.preprocessing import MinMaxScaler
-from skimage.feature import graycomatrix
 import cv2
+from skimage.feature import graycomatrix, graycoprops
 
 # Variavei Globais
 filePath = ""
@@ -72,131 +72,38 @@ def histograma():
         pimg = np.array(img.convert("RGB"))
         hist, bins = np.histogram(pimg.flatten(), 16, [0, 256])
         hist = hist / np.sum(hist)
-        plt.hist(bins[:-1], bins, weights=hist, color='gray', edgecolor='black')
+        plt.bar(bins[:-1], hist, width=np.diff(bins), color='gray')
         plt.xlabel('Tons de Cinza')
         plt.ylabel('Frequência')
         plt.title('Histograma de Tons de Cinza')
         plt.show()
 
-def color_histogram():
-    global img
-    if img:
-        h_bins = 16
-        v_bins = 8
-        # Load the image
-        image = img.convert('HSV')
-        image_np = np.array(image)
-        
-        # Split into HSV channels
-        H, S, V = image_np[:,:,0], image_np[:,:,1], image_np[:,:,2]
-        
-        # Quantize the H and V channels directly
-        H_quantized = (H * (h_bins / 256)).astype(int)
-        V_quantized = (V * (v_bins / 256)).astype(int)
-        
-        # Compute the 2D histogram
-        hist_2d, _, _ = np.histogram2d(H_quantized.flatten(), V_quantized.flatten(), bins=[h_bins, v_bins])
-        plt.imshow(hist_2d, interpolation='nearest', origin='lower', aspect='auto')
-        plt.title('2D Histogram with 16 H bins and 8 V bins')
-        plt.xlabel('Hue bins')
-        plt.ylabel('Value bins')
-        plt.colorbar()
-        plt.show()
-
 def matriz_coocorrencia():
     global img
     if img:
-        dists = [1, 2, 4, 8, 16, 32]
-        image = img.convert('L')
-        image = np.array(image)
-        image = (image // (256 // 16)).astype(np.uint8)
-        glcm = graycomatrix(image, distances=dists, angles=[0], levels=16, symmetric=True, normed=True)
-        for idx, d in enumerate(dists):
-            plt.figure(figsize=(8, 8))
-            plt.imshow(glcm[:, :, idx, 0], cmap='gray')
-            plt.title(f'GLCM para distância = {d}')
-            plt.colorbar()
-            plt.show()
+        image = np.array(img.convert("L"))
+        levels = 16
+        distances = [1, 2, 4, 8, 16, 32]
+        angles = [0, np.pi/4, np.pi/2, 3*np.pi/4]
+        img_gray = (image / 256 * levels).astype(np.uint8)
+        glcm = graycomatrix(img_gray, distances=distances, angles=angles, levels=levels, symmetric=True, normed=True)
+        return glcm
+
 
 def haralick():
-        # Read image using mahotas
-    img = mh.imread(filePath)
-    
-    # Check if the image is already in grayscale; if not, convert it
-    if img.ndim == 3:
-        # Convert image to grayscale
-        img = mh.colors.rgb2grey(img)
-    
-    # Ensure the image is in the correct format (integer type)
-    img = img.astype(np.uint8)
-    
-    # Calculate Haralick features
-    haralick_features = mh.features.haralick(img).mean(axis=0)
-    
-    # Feature names
-    feature_names = [
-        "Angular Second Moment",
-        "Contrast",
-        "Correlation",
-        "Variance",
-        "Inverse Difference Moment",
-        "Sum Average",
-        "Sum Variance",
-        "Sum Entropy",
-        "Entropy",
-        "Difference Variance",
-        "Difference Entropy",
-        "Information Measure of Correlation 1",
-        "Information Measure of Correlation 2"
-    ]
-    
-    # Normalize features for better visualization
-    normalized_features = normalize_features(haralick_features)
-    
-    # Plot the features
-    plt.figure(figsize=(10, 6))
-    plt.bar(range(len(normalized_features)), normalized_features, tick_label=feature_names)
-    plt.xlabel('Haralick Feature')
-    plt.ylabel('Value')
-    plt.title('Haralick Texture Features')
-    plt.xticks(rotation=90)
-    plt.show()
+    # Calcular os descritores de Haralick para a matriz de co-ocorrência
+    properties = ['contrast', 'homogeneity', 'ASM'] 
+    glcm = matriz_coocorrencia()
+    for prop in properties:
+        descriptor = graycoprops(glcm, prop)
+        print(f'Descriptor {prop}:')
+        print(descriptor)
 
 def normalize_features(features):
     # Normalize the features for better visualization
     normalized = (features - np.min(features)) / (np.max(features) - np.min(features))
     return normalized
 
-
-def hu_moments():
-    # Read the input image
-    image = cv2.imread(filePath)
-
-    # Convert the input image to grayscale
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # apply thresholding on gray image
-    ret,thresh = cv2.threshold(gray,150,255,0)
-
-    # Find the contours in the image
-    contours,hierarchy = cv2.findContours(thresh, cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    print("Number of Contours detected:",len(contours))
-
-    # Find the moments of first contour
-    cnt = contours[0]
-    M = cv2.moments(cnt)
-    Hm = cv2.HuMoments(M)
-
-    # Draw the contour
-    cv2.drawContours(image, [cnt], -1, (0,255,255), 3)
-    x1, y1 = cnt[0,0]
-    cv2.putText(image, 'Contour:1', (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
-
-    # print the moments of the first contour
-    print("Hu-Moments of first contour:\n", Hm)
-    cv2.imshow("Hu-Moments", image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 
 def open_image():
     global img
@@ -228,12 +135,8 @@ menu_bar = Menu(root)
 file_menu = Menu(menu_bar, tearoff=0)
 file_menu.add_command(label="Abrir Imagem Normal", command=open_image)
 file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=converterTonsDeCinza)
-file_menu.add_command(label="Abrir Histograma de Tons de Cinza da Imagem", command=histograma)
-file_menu.add_command(label="Abrir Histograma de Cor da Imagem", command=color_histogram)
-file_menu.add_command(label="Matriz de Co-ocorrência", command=matriz_coocorrencia)
-
-#file_menu.add_command(label="Haralick", command=haralick)
-#file_menu.add_command(label="HuMoments", command=hu_moments)
+file_menu.add_command(label="Abrir Histograma da Imagem", command=histograma)
+file_menu.add_command(label="Haralick", command=haralick)
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
 menu_bar.add_cascade(label="Menu", menu=file_menu)
