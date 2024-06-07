@@ -8,8 +8,8 @@ import numpy as np
 import os
 import mahotas as mh
 from sklearn.preprocessing import MinMaxScaler
-import cv2
 from skimage.feature import graycomatrix, graycoprops
+from skimage.measure import moments, moments_hu
 
 # Variavei Globais
 filePath = ""
@@ -99,6 +99,38 @@ def haralick():
         print(f'Descriptor {prop}:')
         print(descriptor)
 
+
+def hu_moments(image):
+    m = moments(image)
+    # Calcular os momentos invariantes de Hu
+    huMoments = moments_hu(m)
+    # Aplicar log transform para trazer os valores para uma escala mais fácil de manipular
+    for i in range(0, 7):
+        huMoments[i] = -np.sign(huMoments[i]) * np.log10(abs(huMoments[i]))
+    return huMoments
+
+def processar_imagem():
+    global img
+    if img:
+        image = np.array(img)
+        gray_image = np.array(img.convert("L"))
+        hsv_image = np.array(img.convert("HSV"))
+        h_channel = hsv_image[:, :, 0]
+        s_channel = hsv_image[:, :, 1]
+        v_channel = hsv_image[:, :, 2]
+        hu_gray = hu_moments(gray_image)
+        
+        # Calcular momentos invariantes de Hu para cada canal do HSV
+        hu_h = hu_moments(h_channel)
+        hu_s = hu_moments(s_channel)
+        hu_v = hu_moments(v_channel)
+
+        print("hu_gray: ", hu_gray)
+        print("hu_h: ", hu_h)
+        print("hu_s: ", hu_s)
+        print("hu_v: ", hu_v)
+
+        return hu_gray, hu_h, hu_s, hu_v
 def normalize_features(features):
     # Normalize the features for better visualization
     normalized = (features - np.min(features)) / (np.max(features) - np.min(features))
@@ -137,6 +169,7 @@ file_menu.add_command(label="Abrir Imagem Normal", command=open_image)
 file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=converterTonsDeCinza)
 file_menu.add_command(label="Abrir Histograma da Imagem", command=histograma)
 file_menu.add_command(label="Haralick", command=haralick)
+file_menu.add_command(label="Hu", command=processar_imagem)
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
 menu_bar.add_cascade(label="Menu", menu=file_menu)
