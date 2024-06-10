@@ -7,8 +7,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 import os
 import mahotas as mh
-from sklearn.preprocessing import MinMaxScaler
-from skimage.feature import graycomatrix, graycoprops
 from skimage.measure import moments, moments_hu
 
 # Variavei Globais
@@ -103,28 +101,19 @@ def color_histogram():
         plt.colorbar()
         plt.show()
 
-
-
-def matriz_coocorrencia():
+def haralick():
     global img
     if img:
         image = np.array(img.convert("L"))
-        levels = 16
-        distances = [1, 2, 4, 8, 16, 32]
-        angles = [0, np.pi/4, np.pi/2, 3*np.pi/4]
-        img_gray = (image / 256 * levels).astype(np.uint8)
-        glcm = graycomatrix(img_gray, distances=distances, angles=angles, levels=levels, symmetric=True, normed=True)
-        return glcm
-
-
-def haralick():
-    # Calcular os descritores de Haralick para a matriz de co-ocorrência
-    properties = ['contrast', 'homogeneity', 'ASM'] 
-    glcm = matriz_coocorrencia()
-    for prop in properties:
-        descriptor = graycoprops(glcm, prop)
-        print(f'Descriptor {prop}:')
-        print(descriptor)
+        features = mh.features.haralick(image)
+        # Mean across the four directions
+        mean_features = features.mean(axis=0)
+        print('mean_features: ', mean_features)
+        return {
+            'Entropy': mean_features[8],
+            'Homogeneity': mean_features[2],
+            'Contrast': mean_features[1]
+        }
 
 
 def hu_moments(image):
