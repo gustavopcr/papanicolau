@@ -8,6 +8,8 @@ import numpy as np
 import os
 import mahotas as mh
 from skimage.measure import moments, moments_hu
+from skimage.feature import graycomatrix, graycoprops
+from sklearn.metrics.cluster import entropy
 
 # Variavei Globais
 filePath = ""
@@ -101,20 +103,43 @@ def color_histogram():
         plt.colorbar()
         plt.show()
 
-def haralick():
-    global img
-    if img:
-        image = np.array(img.convert("L"))
-        features = mh.features.haralick(image)
-        # Mean across the four directions
-        mean_features = features.mean(axis=0)
-        print('mean_features: ', mean_features)
-        return {
-            'Entropy': mean_features[8],
-            'Homogeneity': mean_features[2],
-            'Contrast': mean_features[1]
-        }
+def matriz_coocorrencia(img):
+    image = np.array(img.convert("L"))
+    levels = 16
+    distances = [1, 2, 4, 8, 16, 32]
+    angles = [0, np.pi/4, np.pi/2, 3*np.pi/4]
+    img_gray = (image / 256 * levels).astype(np.uint8)
+    glcm_list = []
 
+    for distance in distances:
+        glcm = graycomatrix(img_gray, distances=[distance], angles=angles, levels=levels, symmetric=True, normed=True)
+        glcm_list.append(glcm)
+
+    return glcm_list
+
+def calculate_entropy(glcm):
+    glcm_normalized = glcm / np.sum(glcm, axis=(0, 1))
+    entropy = -np.sum(glcm_normalized * np.log2(glcm_normalized + (glcm_normalized == 0)), axis=(0, 1))
+    return entropy
+
+def haralick(img):
+    # Properties to compute
+    properties = ['contrast', 'homogeneity']
+    glcm_list = matriz_coocorrencia(img)
+    features = []
+
+    for glcm in glcm_list:
+        glcm_features = {}
+        for prop in properties:
+            descriptor = graycoprops(glcm, prop)
+            glcm_features[prop] = descriptor.mean()
+        
+        entropy = calculate_entropy(glcm)
+        glcm_features['entropy'] = entropy.mean()
+        
+        features.extend(glcm_features.values())
+    print("features: ", features)
+    return features
 
 def hu_moments(image):
     m = moments(image)
@@ -147,6 +172,7 @@ def processar_imagem():
         print("hu_v: ", hu_v)
 
         return hu_gray, hu_h, hu_s, hu_v
+    
 def normalize_features(features):
     # Normalize the features for better visualization
     normalized = (features - np.min(features)) / (np.max(features) - np.min(features))
@@ -185,7 +211,7 @@ file_menu.add_command(label="Abrir Imagem Normal", command=open_image)
 file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=converterTonsDeCinza)
 file_menu.add_command(label="Abrir Histograma De Tons de Cinza da Imagem", command=histograma)
 file_menu.add_command(label="Abrir Histograma HSV da Imagem", command=color_histogram)
-file_menu.add_command(label="Haralick", command=haralick)
+file_menu.add_command(label="Haralick", command=lambda: haralick(img))
 file_menu.add_command(label="Hu", command=processar_imagem)
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
