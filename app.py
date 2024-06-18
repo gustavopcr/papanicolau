@@ -9,6 +9,9 @@ import os
 from functions import *
 import torch
 from efficientnet_pytorch import EfficientNet
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import matplotlib.image as mpimg
 
 # Variavei Globais
 filePath = ""
@@ -16,6 +19,18 @@ img = ""
 
 def say_hello():
     print("Hello!")
+
+def open_image(title, img):
+    imagen_array = np.array(img)
+    fig, ax = plt.subplots()
+    fig.suptitle(title)
+    ax.imshow(imagen_array)
+    ax.axis('off')  # Ocultar os eixos
+    plt.show()
+    # Adicionar a figura à janela Toplevel
+    canvas = FigureCanvasTkAgg(fig, master=top)
+    canvas.draw()
+    canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
 def image_path():
     # Abrir a caixa de diálogo para selecionar o arquivo de imagem
@@ -38,6 +53,7 @@ def image_path():
         label.file_selected.pack()
 
 
+
 def converterTonsDeCinza(img):
     largura, altura = img.size
     imagem = img.convert('RGB')
@@ -55,12 +71,7 @@ def converterTonsDeCinza(img):
 
             # Atualizar o pixel na imagem com o novo valor de intensidade Y
             pixels[x, y] = (y_novo, y_novo, y_novo)
-    img_tk = ImageTk.PhotoImage(imagem)
-    if label.img_label:
-        label.img_label.destroy()
-    label.img_label = tk.Label(root, image=img_tk)
-    label.img_label.image = img_tk  # Manter uma referência da imagem
-    label.img_label.pack()
+    return imagem
 
 def histograma(img):
     pimg = np.array(img.convert("RGB"))
@@ -103,24 +114,10 @@ def show_result(result):
     messagebox.showinfo("Predic Result", f"A imagem é da classe: {result}")
     root.destroy()  # Destroy the hidden root window after showing the popup
 
-def open_image(img):
-    img_tk = ImageTk.PhotoImage(img)
-    
-
-    # Se a imagem já estiver sendo exibida, remova-a antes de adicionar a nova
-    if label.img_label:
-        label.img_label.destroy()
-
-    # Criar um label para exibir a imagem
-    label.img_label = tk.Label(root, image=img_tk)
-    label.img_label.image = img_tk  # Manter uma referência da imagem
-    label.img_label.pack()
-
-
 # Criar a janela principal
 root = tk.Tk()
 root.title("Seletor de Imagem")
-# root.geometry("800x200")  # Aumentar o tamanho da janela para exibir imagens maiores
+root.geometry("800x200")  # Aumentar o tamanho da janela para exibir imagens maiores
 
 button = tk.Button(root, text="Selecionar imagem", command=image_path)
 button.pack(pady=10)
@@ -130,12 +127,11 @@ menu_bar = Menu(root)
 
 # Adicionar um menu "Arquivo"
 file_menu = Menu(menu_bar, tearoff=0)
-file_menu.add_command(label="Abrir Imagem Normal", command=lambda: open_image(img))
-file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=lambda: converterTonsDeCinza(img))
+file_menu.add_command(label="Abrir Imagem Normal", command=lambda: open_image("Imagem Padrão", img))
+file_menu.add_command(label="Abrir Imagem Com os Tons de cinza", command=lambda: open_image("Imagem tom de cinza", converterTonsDeCinza(img)))
 file_menu.add_command(label="Abrir Histograma De Tons de Cinza da Imagem", command=lambda: histograma(img))
 file_menu.add_command(label="Abrir Histograma HSV da Imagem", command=lambda: color_histogram(img))
 file_menu.add_command(label="Haralick", command=lambda: haralick(img))
-file_menu.add_command(label="Hu", command=lambda: processar_imagem(img))
 file_menu.add_command(label="Hu", command=lambda: processar_imagem(img))
 file_menu.add_command(label="XGBoost Binario", command=lambda: show_result(process_xgboost_binary(img)))
 file_menu.add_command(label="XGBoost Multiclasse", command=lambda: show_result(process_xgboost_multiclass(img)))
