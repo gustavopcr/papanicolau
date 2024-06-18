@@ -36,7 +36,8 @@ def main():
                             end = (idx + 1) * 3
                             row.extend(haralick_features[start:end])
                         row.append(label)
-                        writer.writerow([filename] + row)
+                        # Prepend directory name to filename for uniqueness
+                        writer.writerow([os.path.join(folder, filename)] + row)
 
 if __name__ == "__main__":
     main()

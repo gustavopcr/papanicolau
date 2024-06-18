@@ -1,17 +1,18 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
-from tkinter import Menu, filedialog
-from PIL import Image, ImageTk # type: ignore
+from tkinter import Menu, filedialog, messagebox
+from PIL import Image, ImageTk
 from matplotlib import pyplot as plt
 import numpy as np
 import os
 from functions import *
+import torch
+from efficientnet_pytorch import EfficientNet
 
 # Variavei Globais
 filePath = ""
 img = ""
-
 
 def say_hello():
     print("Hello!")
@@ -95,6 +96,12 @@ def color_histogram(img):
     plt.show()
 
 
+def show_result(result):
+    # Show popup message with prediction result
+    root = tk.Tk()
+    root.withdraw()  # Hide the main window
+    messagebox.showinfo("Predic Result", f"A imagem é da classe: {result}")
+    root.destroy()  # Destroy the hidden root window after showing the popup
 
 def open_image(img):
     img_tk = ImageTk.PhotoImage(img)
@@ -108,6 +115,7 @@ def open_image(img):
     label.img_label = tk.Label(root, image=img_tk)
     label.img_label.image = img_tk  # Manter uma referência da imagem
     label.img_label.pack()
+
 
 # Criar a janela principal
 root = tk.Tk()
@@ -128,6 +136,11 @@ file_menu.add_command(label="Abrir Histograma De Tons de Cinza da Imagem", comma
 file_menu.add_command(label="Abrir Histograma HSV da Imagem", command=lambda: color_histogram(img))
 file_menu.add_command(label="Haralick", command=lambda: haralick(img))
 file_menu.add_command(label="Hu", command=lambda: processar_imagem(img))
+file_menu.add_command(label="Hu", command=lambda: processar_imagem(img))
+file_menu.add_command(label="XGBoost Binario", command=lambda: show_result(process_xgboost_binary(img)))
+file_menu.add_command(label="XGBoost Multiclasse", command=lambda: show_result(process_xgboost_multiclass(img)))
+file_menu.add_command(label="Efficient Net Binario", command=lambda: show_result(predict_binary(img)))
+file_menu.add_command(label="Efficient Net Multiclasse", command=lambda: show_result(predict_multi(img)))
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
 menu_bar.add_cascade(label="Menu", menu=file_menu)

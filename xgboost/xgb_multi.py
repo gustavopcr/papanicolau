@@ -1,7 +1,8 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
+import joblib
 
 # Load the CSV file into a DataFrame
 data = pd.read_csv('csv/haralick_multi.csv')
@@ -10,11 +11,15 @@ data = pd.read_csv('csv/haralick_multi.csv')
 X = data.drop(['filename', 'label'], axis=1)
 y = data['label']
 
+# Get feature names
+feature_names = X.columns.tolist()
+
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Initialize and train the XGBoost model
-model = xgb.XGBClassifier(objective='multi:softmax', num_class=6)  # 6 classes in total
+num_classes = 6
+model = xgb.XGBClassifier(objective='multi:softmax', num_class=num_classes)
 model.fit(X_train, y_train)
 
 # Make predictions on the test set
@@ -24,5 +29,7 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
 
-# Print classification report
-print(classification_report(y_test, y_pred))
+# Save the model to a file
+joblib_file = "xgboost_multiclass_model.pkl"
+joblib.dump(model, joblib_file)
+print(f'Model saved to {joblib_file}')
