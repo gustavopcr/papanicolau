@@ -1,0 +1,405 @@
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1558654666957966, max_depth=6, min_child_weight=3, n_estimators=62, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.19076125474713979, max_depth=5, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.19076125474713979, max_depth=5, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.19076125474713979, max_depth=5, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09609788529568163, max_depth=3, min_child_weight=1, n_estimators=116, subsample=1.0; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1558654666957966, max_depth=6, min_child_weight=3, n_estimators=62, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1558654666957966, max_depth=6, min_child_weight=3, n_estimators=62, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06330859696628771, max_depth=4, min_child_weight=3, n_estimators=100, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06330859696628771, max_depth=4, min_child_weight=3, n_estimators=100, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06330859696628771, max_depth=4, min_child_weight=3, n_estimators=100, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09609788529568163, max_depth=3, min_child_weight=1, n_estimators=116, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09609788529568163, max_depth=3, min_child_weight=1, n_estimators=116, subsample=1.0; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.028040930355392096, max_depth=3, min_child_weight=1, n_estimators=169, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.028040930355392096, max_depth=3, min_child_weight=1, n_estimators=169, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.028040930355392096, max_depth=3, min_child_weight=1, n_estimators=169, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.16493661298621565, max_depth=5, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.6s 
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.16493661298621565, max_depth=5, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.6s 
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.16493661298621565, max_depth=5, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.10974803676684262, max_depth=7, min_child_weight=1, n_estimators=101, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.10974803676684262, max_depth=7, min_child_weight=1, n_estimators=101, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.021200740944308988, max_depth=5, min_child_weight=5, n_estimators=164, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.10974803676684262, max_depth=7, min_child_weight=1, n_estimators=101, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09748828840270535, max_depth=4, min_child_weight=1, n_estimators=108, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09748828840270535, max_depth=4, min_child_weight=1, n_estimators=108, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09748828840270535, max_depth=4, min_child_weight=1, n_estimators=108, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.021200740944308988, max_depth=5, min_child_weight=5, n_estimators=164, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.021200740944308988, max_depth=5, min_child_weight=5, n_estimators=164, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.11191890716676044, max_depth=6, min_child_weight=5, n_estimators=95, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.11191890716676044, max_depth=6, min_child_weight=5, n_estimators=95, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.11191890716676044, max_depth=6, min_child_weight=5, n_estimators=95, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18278606709167744, max_depth=4, min_child_weight=5, n_estimators=151, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.032552477685426656, max_depth=4, min_child_weight=3, n_estimators=92, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18278606709167744, max_depth=4, min_child_weight=5, n_estimators=151, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.032552477685426656, max_depth=4, min_child_weight=3, n_estimators=92, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.032552477685426656, max_depth=4, min_child_weight=3, n_estimators=92, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18278606709167744, max_depth=4, min_child_weight=5, n_estimators=151, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18447827307288253, max_depth=7, min_child_weight=3, n_estimators=106, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0996767907495964, max_depth=7, min_child_weight=5, n_estimators=55, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18447827307288253, max_depth=7, min_child_weight=3, n_estimators=106, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.2013375752724647, max_depth=4, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.18447827307288253, max_depth=7, min_child_weight=3, n_estimators=106, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.2013375752724647, max_depth=4, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.195855761046086, max_depth=5, min_child_weight=3, n_estimators=170, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0996767907495964, max_depth=7, min_child_weight=5, n_estimators=55, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0996767907495964, max_depth=7, min_child_weight=5, n_estimators=55, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.195855761046086, max_depth=5, min_child_weight=3, n_estimators=170, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.195855761046086, max_depth=5, min_child_weight=3, n_estimators=170, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.2013375752724647, max_depth=4, min_child_weight=1, n_estimators=171, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07387071574675383, max_depth=7, min_child_weight=1, n_estimators=57, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07387071574675383, max_depth=7, min_child_weight=1, n_estimators=57, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07387071574675383, max_depth=7, min_child_weight=1, n_estimators=57, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05008246581592841, max_depth=6, min_child_weight=5, n_estimators=195, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.082693079486834, max_depth=7, min_child_weight=5, n_estimators=102, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.153307046725969, max_depth=6, min_child_weight=5, n_estimators=184, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.082693079486834, max_depth=7, min_child_weight=5, n_estimators=102, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05008246581592841, max_depth=6, min_child_weight=5, n_estimators=195, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.153307046725969, max_depth=6, min_child_weight=5, n_estimators=184, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.082693079486834, max_depth=7, min_child_weight=5, n_estimators=102, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.153307046725969, max_depth=6, min_child_weight=5, n_estimators=184, subsample=1.0; total time=   0.7s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05008246581592841, max_depth=6, min_child_weight=5, n_estimators=195, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1995705421943741, max_depth=7, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1995705421943741, max_depth=7, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1995705421943741, max_depth=7, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17613210817644423, max_depth=3, min_child_weight=5, n_estimators=194, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17613210817644423, max_depth=3, min_child_weight=5, n_estimators=194, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.08965641520663076, max_depth=3, min_child_weight=3, n_estimators=130, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17613210817644423, max_depth=3, min_child_weight=5, n_estimators=194, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.08965641520663076, max_depth=3, min_child_weight=3, n_estimators=130, subsample=1.0; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.037693570098443846, max_depth=5, min_child_weight=1, n_estimators=58, subsample=1.0; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.08965641520663076, max_depth=3, min_child_weight=3, n_estimators=130, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.037693570098443846, max_depth=5, min_child_weight=1, n_estimators=58, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.037693570098443846, max_depth=5, min_child_weight=1, n_estimators=58, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1705662033914478, max_depth=5, min_child_weight=1, n_estimators=190, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1705662033914478, max_depth=5, min_child_weight=1, n_estimators=190, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.045515592055730296, max_depth=4, min_child_weight=3, n_estimators=147, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1705662033914478, max_depth=5, min_child_weight=1, n_estimators=190, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.045515592055730296, max_depth=4, min_child_weight=3, n_estimators=147, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.045515592055730296, max_depth=4, min_child_weight=3, n_estimators=147, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07486494328254321, max_depth=4, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.0337642602400016, max_depth=3, min_child_weight=5, n_estimators=187, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07486494328254321, max_depth=4, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.0337642602400016, max_depth=3, min_child_weight=5, n_estimators=187, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07486494328254321, max_depth=4, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.0337642602400016, max_depth=3, min_child_weight=5, n_estimators=187, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20910414253699094, max_depth=4, min_child_weight=5, n_estimators=140, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20910414253699094, max_depth=4, min_child_weight=5, n_estimators=140, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.13412731526598248, max_depth=3, min_child_weight=3, n_estimators=84, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.156148523670654, max_depth=3, min_child_weight=1, n_estimators=162, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20910414253699094, max_depth=4, min_child_weight=5, n_estimators=140, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.13412731526598248, max_depth=3, min_child_weight=3, n_estimators=84, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.13412731526598248, max_depth=3, min_child_weight=3, n_estimators=84, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.156148523670654, max_depth=3, min_child_weight=1, n_estimators=162, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.156148523670654, max_depth=3, min_child_weight=1, n_estimators=162, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1864786114814072, max_depth=3, min_child_weight=1, n_estimators=148, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1864786114814072, max_depth=3, min_child_weight=1, n_estimators=148, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1864786114814072, max_depth=3, min_child_weight=1, n_estimators=148, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.042223923754609274, max_depth=6, min_child_weight=5, n_estimators=147, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.042223923754609274, max_depth=6, min_child_weight=5, n_estimators=147, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06187039917926839, max_depth=6, min_child_weight=3, n_estimators=98, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1836641901018459, max_depth=6, min_child_weight=1, n_estimators=108, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06187039917926839, max_depth=6, min_child_weight=3, n_estimators=98, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.042223923754609274, max_depth=6, min_child_weight=5, n_estimators=147, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1836641901018459, max_depth=6, min_child_weight=1, n_estimators=108, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.06187039917926839, max_depth=6, min_child_weight=3, n_estimators=98, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1836641901018459, max_depth=6, min_child_weight=1, n_estimators=108, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.018724259710619987, max_depth=4, min_child_weight=5, n_estimators=115, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.018724259710619987, max_depth=4, min_child_weight=5, n_estimators=115, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09544708774609488, max_depth=7, min_child_weight=1, n_estimators=160, subsample=1.0; total time=   0.8s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.018724259710619987, max_depth=4, min_child_weight=5, n_estimators=115, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20001086705648352, max_depth=4, min_child_weight=5, n_estimators=77, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20001086705648352, max_depth=4, min_child_weight=5, n_estimators=77, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09544708774609488, max_depth=7, min_child_weight=1, n_estimators=160, subsample=1.0; total time=   1.0s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.05093501168368259, max_depth=6, min_child_weight=1, n_estimators=102, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.05093501168368259, max_depth=6, min_child_weight=1, n_estimators=102, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20001086705648352, max_depth=4, min_child_weight=5, n_estimators=77, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.09544708774609488, max_depth=7, min_child_weight=1, n_estimators=160, subsample=1.0; total time=   1.1s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.05093501168368259, max_depth=6, min_child_weight=1, n_estimators=102, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.053683568370407615, max_depth=6, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04216151399065153, max_depth=3, min_child_weight=1, n_estimators=155, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.053683568370407615, max_depth=6, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.053683568370407615, max_depth=6, min_child_weight=1, n_estimators=95, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04216151399065153, max_depth=3, min_child_weight=1, n_estimators=155, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12138273759059043, max_depth=5, min_child_weight=1, n_estimators=121, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12138273759059043, max_depth=5, min_child_weight=1, n_estimators=121, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04216151399065153, max_depth=3, min_child_weight=1, n_estimators=155, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.11391424354690681, max_depth=7, min_child_weight=5, n_estimators=191, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12138273759059043, max_depth=5, min_child_weight=1, n_estimators=121, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10104141244445869, max_depth=7, min_child_weight=5, n_estimators=56, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.11391424354690681, max_depth=7, min_child_weight=5, n_estimators=191, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10104141244445869, max_depth=7, min_child_weight=5, n_estimators=56, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.11391424354690681, max_depth=7, min_child_weight=5, n_estimators=191, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10104141244445869, max_depth=7, min_child_weight=5, n_estimators=56, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06102100370205172, max_depth=3, min_child_weight=1, n_estimators=127, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06102100370205172, max_depth=3, min_child_weight=1, n_estimators=127, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06102100370205172, max_depth=3, min_child_weight=1, n_estimators=127, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1102548564537997, max_depth=5, min_child_weight=1, n_estimators=154, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1102548564537997, max_depth=5, min_child_weight=1, n_estimators=154, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20831865873519598, max_depth=7, min_child_weight=5, n_estimators=71, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20831865873519598, max_depth=7, min_child_weight=5, n_estimators=71, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.20831865873519598, max_depth=7, min_child_weight=5, n_estimators=71, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1102548564537997, max_depth=5, min_child_weight=1, n_estimators=154, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.06935539029034975, max_depth=7, min_child_weight=5, n_estimators=89, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.06661923830785348, max_depth=5, min_child_weight=1, n_estimators=198, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.06935539029034975, max_depth=7, min_child_weight=5, n_estimators=89, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1923208045857846, max_depth=7, min_child_weight=5, n_estimators=90, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.06661923830785348, max_depth=5, min_child_weight=1, n_estimators=198, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1923208045857846, max_depth=7, min_child_weight=5, n_estimators=90, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.06935539029034975, max_depth=7, min_child_weight=5, n_estimators=89, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.06661923830785348, max_depth=5, min_child_weight=1, n_estimators=198, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1923208045857846, max_depth=7, min_child_weight=5, n_estimators=90, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.13123905553943485, max_depth=4, min_child_weight=5, n_estimators=108, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.13123905553943485, max_depth=4, min_child_weight=5, n_estimators=108, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.13123905553943485, max_depth=4, min_child_weight=5, n_estimators=108, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07774510939000635, max_depth=7, min_child_weight=5, n_estimators=190, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07774510939000635, max_depth=7, min_child_weight=5, n_estimators=190, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1429763171054636, max_depth=6, min_child_weight=5, n_estimators=97, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1429763171054636, max_depth=6, min_child_weight=5, n_estimators=97, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1429763171054636, max_depth=6, min_child_weight=5, n_estimators=97, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.07774510939000635, max_depth=7, min_child_weight=5, n_estimators=190, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18166980169303365, max_depth=6, min_child_weight=5, n_estimators=198, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18166980169303365, max_depth=6, min_child_weight=5, n_estimators=198, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18166980169303365, max_depth=6, min_child_weight=5, n_estimators=198, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07811983093627341, max_depth=7, min_child_weight=1, n_estimators=51, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07811983093627341, max_depth=7, min_child_weight=1, n_estimators=51, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.07811983093627341, max_depth=7, min_child_weight=1, n_estimators=51, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.20062177794607983, max_depth=4, min_child_weight=1, n_estimators=164, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.14061279572313648, max_depth=7, min_child_weight=3, n_estimators=144, subsample=0.8; total time=   0.8s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.14061279572313648, max_depth=7, min_child_weight=3, n_estimators=144, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.158829561153049, max_depth=6, min_child_weight=1, n_estimators=160, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.14061279572313648, max_depth=7, min_child_weight=3, n_estimators=144, subsample=0.8; total time=   0.8s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06809598296047135, max_depth=3, min_child_weight=1, n_estimators=194, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.20062177794607983, max_depth=4, min_child_weight=1, n_estimators=164, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06809598296047135, max_depth=3, min_child_weight=1, n_estimators=194, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.20062177794607983, max_depth=4, min_child_weight=1, n_estimators=164, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.158829561153049, max_depth=6, min_child_weight=1, n_estimators=160, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.06809598296047135, max_depth=3, min_child_weight=1, n_estimators=194, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.04358411310063649, max_depth=6, min_child_weight=5, n_estimators=66, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.158829561153049, max_depth=6, min_child_weight=1, n_estimators=160, subsample=0.8; total time=   0.8s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.04358411310063649, max_depth=6, min_child_weight=5, n_estimators=66, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.09818295321346097, max_depth=5, min_child_weight=5, n_estimators=100, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.09818295321346097, max_depth=5, min_child_weight=5, n_estimators=100, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.04358411310063649, max_depth=6, min_child_weight=5, n_estimators=66, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.09818295321346097, max_depth=5, min_child_weight=5, n_estimators=100, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.16930585894211125, max_depth=4, min_child_weight=3, n_estimators=139, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.16930585894211125, max_depth=4, min_child_weight=3, n_estimators=139, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.16930585894211125, max_depth=4, min_child_weight=3, n_estimators=139, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05823982060585193, max_depth=4, min_child_weight=3, n_estimators=169, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05823982060585193, max_depth=4, min_child_weight=3, n_estimators=169, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.05823982060585193, max_depth=4, min_child_weight=3, n_estimators=169, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.08178178358231245, max_depth=6, min_child_weight=3, n_estimators=104, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.08178178358231245, max_depth=6, min_child_weight=3, n_estimators=104, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.08178178358231245, max_depth=6, min_child_weight=3, n_estimators=104, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.09461454222527126, max_depth=7, min_child_weight=1, n_estimators=70, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.09461454222527126, max_depth=7, min_child_weight=1, n_estimators=70, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.09461454222527126, max_depth=7, min_child_weight=1, n_estimators=70, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.1258963719039849, max_depth=7, min_child_weight=1, n_estimators=152, subsample=0.8; total time=   0.9s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.1258963719039849, max_depth=7, min_child_weight=1, n_estimators=152, subsample=0.8; total time=   0.9s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.1258963719039849, max_depth=7, min_child_weight=1, n_estimators=152, subsample=0.8; total time=   1.1s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16891073202545653, max_depth=7, min_child_weight=3, n_estimators=105, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16891073202545653, max_depth=7, min_child_weight=3, n_estimators=105, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.15449058230103205, max_depth=3, min_child_weight=1, n_estimators=143, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.15449058230103205, max_depth=3, min_child_weight=1, n_estimators=143, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16891073202545653, max_depth=7, min_child_weight=3, n_estimators=105, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.15449058230103205, max_depth=3, min_child_weight=1, n_estimators=143, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.0645041844410421, max_depth=7, min_child_weight=5, n_estimators=102, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.0645041844410421, max_depth=7, min_child_weight=5, n_estimators=102, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.0645041844410421, max_depth=7, min_child_weight=5, n_estimators=102, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.02423852950974225, max_depth=5, min_child_weight=1, n_estimators=198, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.17143476408966302, max_depth=5, min_child_weight=3, n_estimators=146, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.17143476408966302, max_depth=5, min_child_weight=3, n_estimators=146, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1753130455350873, max_depth=4, min_child_weight=1, n_estimators=117, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.17143476408966302, max_depth=5, min_child_weight=3, n_estimators=146, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1753130455350873, max_depth=4, min_child_weight=1, n_estimators=117, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.1753130455350873, max_depth=4, min_child_weight=1, n_estimators=117, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.02423852950974225, max_depth=5, min_child_weight=1, n_estimators=198, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06798008157506764, max_depth=5, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06798008157506764, max_depth=5, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06798008157506764, max_depth=5, min_child_weight=3, n_estimators=158, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.02423852950974225, max_depth=5, min_child_weight=1, n_estimators=198, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.18457608417415136, max_depth=4, min_child_weight=5, n_estimators=155, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.18457608417415136, max_depth=4, min_child_weight=5, n_estimators=155, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.18457608417415136, max_depth=4, min_child_weight=5, n_estimators=155, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.07757799482354734, max_depth=5, min_child_weight=1, n_estimators=104, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.023639838159644294, max_depth=4, min_child_weight=3, n_estimators=197, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.023639838159644294, max_depth=4, min_child_weight=3, n_estimators=197, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.07757799482354734, max_depth=5, min_child_weight=1, n_estimators=104, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.07757799482354734, max_depth=5, min_child_weight=1, n_estimators=104, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.023639838159644294, max_depth=4, min_child_weight=3, n_estimators=197, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16914647516682335, max_depth=5, min_child_weight=1, n_estimators=139, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12560915326185632, max_depth=5, min_child_weight=1, n_estimators=68, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16914647516682335, max_depth=5, min_child_weight=1, n_estimators=139, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12560915326185632, max_depth=5, min_child_weight=1, n_estimators=68, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.12560915326185632, max_depth=5, min_child_weight=1, n_estimators=68, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.16914647516682335, max_depth=5, min_child_weight=1, n_estimators=139, subsample=1.0; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18261056170227222, max_depth=7, min_child_weight=5, n_estimators=80, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.12230983835907393, max_depth=3, min_child_weight=1, n_estimators=150, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18261056170227222, max_depth=7, min_child_weight=5, n_estimators=80, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.18261056170227222, max_depth=7, min_child_weight=5, n_estimators=80, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.12230983835907393, max_depth=3, min_child_weight=1, n_estimators=150, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.03216015154097737, max_depth=4, min_child_weight=3, n_estimators=135, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.12230983835907393, max_depth=3, min_child_weight=1, n_estimators=150, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.03216015154097737, max_depth=4, min_child_weight=3, n_estimators=135, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.03216015154097737, max_depth=4, min_child_weight=3, n_estimators=135, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.17912359448234808, max_depth=4, min_child_weight=5, n_estimators=135, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.17912359448234808, max_depth=4, min_child_weight=5, n_estimators=135, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.17416624581082243, max_depth=4, min_child_weight=5, n_estimators=166, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.17416624581082243, max_depth=4, min_child_weight=5, n_estimators=166, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.17912359448234808, max_depth=4, min_child_weight=5, n_estimators=135, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.17416624581082243, max_depth=4, min_child_weight=5, n_estimators=166, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1213274667812906, max_depth=5, min_child_weight=3, n_estimators=58, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1213274667812906, max_depth=5, min_child_weight=3, n_estimators=58, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.02422001800894497, max_depth=4, min_child_weight=5, n_estimators=99, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.02422001800894497, max_depth=4, min_child_weight=5, n_estimators=99, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0, learning_rate=0.1213274667812906, max_depth=5, min_child_weight=3, n_estimators=58, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.02422001800894497, max_depth=4, min_child_weight=5, n_estimators=99, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.026632700281001967, max_depth=7, min_child_weight=3, n_estimators=102, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.16783909366217326, max_depth=3, min_child_weight=3, n_estimators=81, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.026632700281001967, max_depth=7, min_child_weight=3, n_estimators=102, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.16783909366217326, max_depth=3, min_child_weight=3, n_estimators=81, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.16783909366217326, max_depth=3, min_child_weight=3, n_estimators=81, subsample=0.8; total time=   0.1s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06828333115057936, max_depth=3, min_child_weight=3, n_estimators=52, subsample=1.0; total time=   0.0s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1384755483647759, max_depth=6, min_child_weight=5, n_estimators=118, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06828333115057936, max_depth=3, min_child_weight=3, n_estimators=52, subsample=1.0; total time=   0.0s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.06828333115057936, max_depth=3, min_child_weight=3, n_estimators=52, subsample=1.0; total time=   0.0s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1384755483647759, max_depth=6, min_child_weight=5, n_estimators=118, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.1384755483647759, max_depth=6, min_child_weight=5, n_estimators=118, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.2, learning_rate=0.026632700281001967, max_depth=7, min_child_weight=3, n_estimators=102, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04992787958421545, max_depth=4, min_child_weight=3, n_estimators=149, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04992787958421545, max_depth=4, min_child_weight=3, n_estimators=149, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.04992787958421545, max_depth=4, min_child_weight=3, n_estimators=149, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20439220750954967, max_depth=3, min_child_weight=5, n_estimators=158, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20439220750954967, max_depth=3, min_child_weight=5, n_estimators=158, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.20439220750954967, max_depth=3, min_child_weight=5, n_estimators=158, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.02935169707232023, max_depth=5, min_child_weight=5, n_estimators=100, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.02935169707232023, max_depth=5, min_child_weight=5, n_estimators=100, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.1763972734818584, max_depth=3, min_child_weight=5, n_estimators=186, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.1763972734818584, max_depth=3, min_child_weight=5, n_estimators=186, subsample=1.0; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.02935169707232023, max_depth=5, min_child_weight=5, n_estimators=100, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.2, learning_rate=0.1763972734818584, max_depth=3, min_child_weight=5, n_estimators=186, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17778285362175267, max_depth=6, min_child_weight=1, n_estimators=135, subsample=0.8; total time=   0.5s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.18207673954144168, max_depth=5, min_child_weight=1, n_estimators=61, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17778285362175267, max_depth=6, min_child_weight=1, n_estimators=135, subsample=0.8; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.18207673954144168, max_depth=5, min_child_weight=1, n_estimators=61, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.18207673954144168, max_depth=5, min_child_weight=1, n_estimators=61, subsample=0.8; total time=   0.2s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20001207105356247, max_depth=5, min_child_weight=3, n_estimators=148, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20001207105356247, max_depth=5, min_child_weight=3, n_estimators=148, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20001207105356247, max_depth=5, min_child_weight=3, n_estimators=148, subsample=0.8; total time=   0.4s
+[CV] END colsample_bytree=0.8, gamma=0.1, learning_rate=0.17778285362175267, max_depth=6, min_child_weight=1, n_estimators=135, subsample=0.8; total time=   0.7s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10066417732556555, max_depth=6, min_child_weight=1, n_estimators=79, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10066417732556555, max_depth=6, min_child_weight=1, n_estimators=79, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0.1, learning_rate=0.10066417732556555, max_depth=6, min_child_weight=1, n_estimators=79, subsample=1.0; total time=   0.4s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1225081131838761, max_depth=5, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1225081131838761, max_depth=5, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.1225081131838761, max_depth=5, min_child_weight=3, n_estimators=118, subsample=1.0; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0815067323166562, max_depth=6, min_child_weight=1, n_estimators=60, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0815067323166562, max_depth=6, min_child_weight=1, n_estimators=60, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.0815067323166562, max_depth=6, min_child_weight=1, n_estimators=60, subsample=0.8; total time=   0.3s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20777904168712663, max_depth=7, min_child_weight=1, n_estimators=132, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20777904168712663, max_depth=7, min_child_weight=1, n_estimators=132, subsample=1.0; total time=   0.6s
+[CV] END colsample_bytree=1.0, gamma=0, learning_rate=0.20777904168712663, max_depth=7, min_child_weight=1, n_estimators=132, subsample=1.0; total time=   0.6s
+Accuracy for each model:
+Mean Accuracy: 0.7901 (±0.0066) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.1558654666957966, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 62, 'subsample': 1.0}
+Mean Accuracy: 0.7923 (±0.0079) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.19076125474713979, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 95, 'subsample': 1.0}
+Mean Accuracy: 0.7939 (±0.0030) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.06330859696628771, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 100, 'subsample': 1.0}
+Mean Accuracy: 0.7847 (±0.0037) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.16493661298621565, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 171, 'subsample': 0.8}
+Mean Accuracy: 0.7946 (±0.0021) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.09609788529568163, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 116, 'subsample': 1.0}
+Mean Accuracy: 0.7856 (±0.0022) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.10974803676684262, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 101, 'subsample': 0.8}
+Mean Accuracy: 0.7923 (±0.0044) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.028040930355392096, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 169, 'subsample': 1.0}
+Mean Accuracy: 0.7948 (±0.0037) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.021200740944308988, 'max_depth': 5, 'min_child_weight': 5, 'n_estimators': 164, 'subsample': 1.0}
+Mean Accuracy: 0.7968 (±0.0061) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.09748828840270535, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 108, 'subsample': 0.8}
+Mean Accuracy: 0.7923 (±0.0033) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.11191890716676044, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 95, 'subsample': 1.0}
+Mean Accuracy: 0.7894 (±0.0039) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.18278606709167744, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 151, 'subsample': 1.0}
+Mean Accuracy: 0.7935 (±0.0018) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.032552477685426656, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 92, 'subsample': 1.0}
+Mean Accuracy: 0.7852 (±0.0042) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.18447827307288253, 'max_depth': 7, 'min_child_weight': 3, 'n_estimators': 106, 'subsample': 1.0}
+Mean Accuracy: 0.7793 (±0.0080) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.2013375752724647, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 171, 'subsample': 0.8}
+Mean Accuracy: 0.7843 (±0.0059) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.195855761046086, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 170, 'subsample': 1.0}
+Mean Accuracy: 0.7932 (±0.0058) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.0996767907495964, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 55, 'subsample': 1.0}
+Mean Accuracy: 0.7932 (±0.0060) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.07387071574675383, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 57, 'subsample': 1.0}
+Mean Accuracy: 0.7928 (±0.0028) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.05008246581592841, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 195, 'subsample': 0.8}
+Mean Accuracy: 0.7811 (±0.0072) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.153307046725969, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 184, 'subsample': 1.0}
+Mean Accuracy: 0.7910 (±0.0040) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.082693079486834, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 102, 'subsample': 0.8}
+Mean Accuracy: 0.7823 (±0.0088) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.1995705421943741, 'max_depth': 7, 'min_child_weight': 3, 'n_estimators': 118, 'subsample': 1.0}
+Mean Accuracy: 0.7800 (±0.0026) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.1705662033914478, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 190, 'subsample': 0.8}
+Mean Accuracy: 0.7854 (±0.0069) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.17613210817644423, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 194, 'subsample': 1.0}
+Mean Accuracy: 0.7953 (±0.0025) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.08965641520663076, 'max_depth': 3, 'min_child_weight': 3, 'n_estimators': 130, 'subsample': 1.0}
+Mean Accuracy: 0.7930 (±0.0048) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.037693570098443846, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 58, 'subsample': 1.0}
+Mean Accuracy: 0.7926 (±0.0040) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.045515592055730296, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 147, 'subsample': 1.0}
+Mean Accuracy: 0.7919 (±0.0028) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.07486494328254321, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 158, 'subsample': 0.8}
+Mean Accuracy: 0.7932 (±0.0037) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.0337642602400016, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 187, 'subsample': 1.0}
+Mean Accuracy: 0.7843 (±0.0077) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.20910414253699094, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 140, 'subsample': 0.8}
+Mean Accuracy: 0.7905 (±0.0041) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.156148523670654, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 162, 'subsample': 0.8}
+Mean Accuracy: 0.7937 (±0.0034) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.13412731526598248, 'max_depth': 3, 'min_child_weight': 3, 'n_estimators': 84, 'subsample': 0.8}
+Mean Accuracy: 0.7921 (±0.0081) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1864786114814072, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 148, 'subsample': 0.8}
+Mean Accuracy: 0.7928 (±0.0062) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.042223923754609274, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 147, 'subsample': 1.0}
+Mean Accuracy: 0.7867 (±0.0030) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.09544708774609488, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 160, 'subsample': 1.0}
+Mean Accuracy: 0.7863 (±0.0041) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1836641901018459, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 108, 'subsample': 1.0}
+Mean Accuracy: 0.7966 (±0.0039) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.06187039917926839, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 98, 'subsample': 1.0}
+Mean Accuracy: 0.7946 (±0.0070) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.05093501168368259, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 102, 'subsample': 0.8}
+Mean Accuracy: 0.7923 (±0.0031) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.018724259710619987, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 115, 'subsample': 0.8}
+Mean Accuracy: 0.7890 (±0.0050) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.20001086705648352, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 77, 'subsample': 0.8}
+Mean Accuracy: 0.7932 (±0.0053) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.053683568370407615, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 95, 'subsample': 1.0}
+Mean Accuracy: 0.7784 (±0.0050) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.11391424354690681, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 191, 'subsample': 0.8}
+Mean Accuracy: 0.7861 (±0.0049) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.12138273759059043, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 121, 'subsample': 0.8}
+Mean Accuracy: 0.7919 (±0.0030) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.04216151399065153, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 155, 'subsample': 1.0}
+Mean Accuracy: 0.7944 (±0.0069) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.10104141244445869, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 56, 'subsample': 1.0}
+Mean Accuracy: 0.7843 (±0.0045) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.1102548564537997, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 154, 'subsample': 0.8}
+Mean Accuracy: 0.7926 (±0.0035) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.06102100370205172, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 127, 'subsample': 0.8}
+Mean Accuracy: 0.7897 (±0.0040) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.06661923830785348, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 198, 'subsample': 0.8}
+Mean Accuracy: 0.7825 (±0.0022) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.20831865873519598, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 71, 'subsample': 1.0}
+Mean Accuracy: 0.7948 (±0.0060) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.06935539029034975, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 89, 'subsample': 0.8}
+Mean Accuracy: 0.7892 (±0.0074) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.1923208045857846, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 90, 'subsample': 1.0}
+Mean Accuracy: 0.7852 (±0.0030) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.07774510939000635, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 190, 'subsample': 1.0}
+Mean Accuracy: 0.7755 (±0.0086) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.18166980169303365, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 198, 'subsample': 0.8}
+Mean Accuracy: 0.7926 (±0.0064) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.13123905553943485, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 108, 'subsample': 1.0}
+Mean Accuracy: 0.7905 (±0.0059) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1429763171054636, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 97, 'subsample': 1.0}
+Mean Accuracy: 0.7782 (±0.0073) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.14061279572313648, 'max_depth': 7, 'min_child_weight': 3, 'n_estimators': 144, 'subsample': 0.8}
+Mean Accuracy: 0.7953 (±0.0065) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.07811983093627341, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 51, 'subsample': 0.8}
+Mean Accuracy: 0.7784 (±0.0114) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.158829561153049, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 160, 'subsample': 0.8}
+Mean Accuracy: 0.7863 (±0.0052) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.20062177794607983, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 164, 'subsample': 1.0}
+Mean Accuracy: 0.7937 (±0.0036) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.06809598296047135, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 194, 'subsample': 1.0}
+Mean Accuracy: 0.7953 (±0.0041) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.04358411310063649, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 66, 'subsample': 1.0}
+Mean Accuracy: 0.7919 (±0.0050) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.09818295321346097, 'max_depth': 5, 'min_child_weight': 5, 'n_estimators': 100, 'subsample': 1.0}
+Mean Accuracy: 0.7861 (±0.0052) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.16930585894211125, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 139, 'subsample': 1.0}
+Mean Accuracy: 0.7843 (±0.0060) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.1258963719039849, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 152, 'subsample': 0.8}
+Mean Accuracy: 0.7928 (±0.0057) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.05823982060585193, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 169, 'subsample': 0.8}
+Mean Accuracy: 0.7935 (±0.0047) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.08178178358231245, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 104, 'subsample': 0.8}
+Mean Accuracy: 0.7928 (±0.0025) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.09461454222527126, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 70, 'subsample': 0.8}
+Mean Accuracy: 0.7778 (±0.0074) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.16891073202545653, 'max_depth': 7, 'min_child_weight': 3, 'n_estimators': 105, 'subsample': 0.8}
+Mean Accuracy: 0.7917 (±0.0058) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.0645041844410421, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 102, 'subsample': 1.0}
+Mean Accuracy: 0.7923 (±0.0070) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.15449058230103205, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 143, 'subsample': 1.0}
+Mean Accuracy: 0.7935 (±0.0017) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.02423852950974225, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 198, 'subsample': 1.0}
+Mean Accuracy: 0.7811 (±0.0076) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.17143476408966302, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 146, 'subsample': 1.0}
+Mean Accuracy: 0.7930 (±0.0044) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.06798008157506764, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 158, 'subsample': 0.8}
+Mean Accuracy: 0.7914 (±0.0078) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.1753130455350873, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 117, 'subsample': 1.0}
+Mean Accuracy: 0.7829 (±0.0073) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.18457608417415136, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 155, 'subsample': 0.8}
+Mean Accuracy: 0.7935 (±0.0017) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.023639838159644294, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 197, 'subsample': 1.0}
+Mean Accuracy: 0.7923 (±0.0048) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.07757799482354734, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 104, 'subsample': 1.0}
+Mean Accuracy: 0.7865 (±0.0063) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.16914647516682335, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 139, 'subsample': 1.0}
+Mean Accuracy: 0.7923 (±0.0050) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.12560915326185632, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 68, 'subsample': 1.0}
+Mean Accuracy: 0.7876 (±0.0079) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.18261056170227222, 'max_depth': 7, 'min_child_weight': 5, 'n_estimators': 80, 'subsample': 1.0}
+Mean Accuracy: 0.7939 (±0.0069) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.12230983835907393, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 150, 'subsample': 1.0}
+Mean Accuracy: 0.7930 (±0.0029) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.03216015154097737, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 135, 'subsample': 0.8}
+Mean Accuracy: 0.7870 (±0.0045) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.17912359448234808, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 135, 'subsample': 1.0}
+Mean Accuracy: 0.7872 (±0.0028) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.17416624581082243, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 166, 'subsample': 1.0}
+Mean Accuracy: 0.7959 (±0.0052) for {'colsample_bytree': 1.0, 'gamma': 0.2, 'learning_rate': 0.026632700281001967, 'max_depth': 7, 'min_child_weight': 3, 'n_estimators': 102, 'subsample': 0.8}
+Mean Accuracy: 0.7923 (±0.0015) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.02422001800894497, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 99, 'subsample': 0.8}
+Mean Accuracy: 0.7957 (±0.0052) for {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1213274667812906, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 58, 'subsample': 0.8}
+Mean Accuracy: 0.7885 (±0.0036) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.1384755483647759, 'max_depth': 6, 'min_child_weight': 5, 'n_estimators': 118, 'subsample': 0.8}
+Mean Accuracy: 0.7950 (±0.0067) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.16783909366217326, 'max_depth': 3, 'min_child_weight': 3, 'n_estimators': 81, 'subsample': 0.8}
+Mean Accuracy: 0.7941 (±0.0056) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.04992787958421545, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 149, 'subsample': 0.8}
+Mean Accuracy: 0.7932 (±0.0049) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.06828333115057936, 'max_depth': 3, 'min_child_weight': 3, 'n_estimators': 52, 'subsample': 1.0}
+Mean Accuracy: 0.7883 (±0.0053) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.20439220750954967, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 158, 'subsample': 1.0}
+Mean Accuracy: 0.7944 (±0.0033) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.02935169707232023, 'max_depth': 5, 'min_child_weight': 5, 'n_estimators': 100, 'subsample': 0.8}
+Mean Accuracy: 0.7758 (±0.0078) for {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.17778285362175267, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 135, 'subsample': 0.8}
+Mean Accuracy: 0.7858 (±0.0057) for {'colsample_bytree': 0.8, 'gamma': 0.2, 'learning_rate': 0.1763972734818584, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 186, 'subsample': 1.0}
+Mean Accuracy: 0.7820 (±0.0022) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.20001207105356247, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 148, 'subsample': 0.8}
+Mean Accuracy: 0.7917 (±0.0062) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.18207673954144168, 'max_depth': 5, 'min_child_weight': 1, 'n_estimators': 61, 'subsample': 0.8}
+Mean Accuracy: 0.7961 (±0.0074) for {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.10066417732556555, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 79, 'subsample': 1.0}
+Mean Accuracy: 0.7805 (±0.0052) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.20777904168712663, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 132, 'subsample': 1.0}
+Mean Accuracy: 0.7881 (±0.0055) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1225081131838761, 'max_depth': 5, 'min_child_weight': 3, 'n_estimators': 118, 'subsample': 1.0}
+Mean Accuracy: 0.7950 (±0.0062) for {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.0815067323166562, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 60, 'subsample': 0.8}
+
+Best parameters found: {'colsample_bytree': 1.0, 'gamma': 0.1, 'learning_rate': 0.09748828840270535, 'max_depth': 4, 'min_child_weight': 1, 'n_estimators': 108, 'subsample': 0.8}
+Accuracy: 0.7752909579230081
