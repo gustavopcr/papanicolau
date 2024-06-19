@@ -167,17 +167,17 @@ def predict_binary(img):
 def predict_multi(img):
     # Load and preprocess the image
     image = img.convert('RGB')
-    image = transform(image).unsqueeze(0).to('cpu')  # Add batch dimension and move to device
+    image_tensor = transform(image).unsqueeze(0)  # Add batch dimension
 
-    # Convert Haralick features to tensor
-    haralick_features = torch.tensor(haralick(img.convert('RGB')), dtype=torch.float32).unsqueeze(0).to('cpu')  # Add batch dimension and move to device
-
+    # Extract Haralick features
+    haralick_features_tensor = torch.tensor(haralick(image), dtype=torch.float32).unsqueeze(0)
     # Make prediction
     with torch.no_grad():
-        output = model_multi(image, haralick_features)
+        output = model_multi(image_tensor, haralick_features_tensor)
         _, predicted = torch.max(output, 1)
-    print('predicted.item()', predicted.item())
+
     return multiclass_pred[predicted.item()]
+
 
 
 
@@ -194,6 +194,21 @@ def matriz_coocorrencia(img):
         glcm_list.append(glcm)
 
     return glcm_list
+
+
+def plot_matriz_coocorrencia(img):
+    # Calcular as matrizes de co-ocorrência
+    glcm_list = matriz_coocorrencia(img)
+    distances = [1, 2, 4, 8, 16, 32]
+    # Plotar as matrizes
+    plt.figure(figsize=(15, 10))
+    for i, glcm in enumerate(glcm_list, 1):
+        plt.subplot(2, 3, i)
+        plt.imshow(glcm[:, :, 0, 0], cmap='gray', interpolation='nearest')
+        plt.title(f"Distância {distances[i-1]}")
+        plt.axis('off')
+
+    plt.show()
 
 def calculate_entropy(glcm):
     glcm_normalized = glcm / np.sum(glcm, axis=(0, 1))
@@ -218,6 +233,27 @@ def haralick(img):
         features.extend(glcm_features.values())
     return features
 
+def plot_haralick(img):
+    properties = ['Contrast', 'Homogeneity', 'Entropy']
+    distances = [1, 2, 4, 8, 16, 32]
+    features = haralick(img)
+
+    plt.figure(figsize=(15, 5))
+
+    for i, prop in enumerate(properties):
+        start_idx = i * len(distances)
+        end_idx = start_idx + len(distances)
+        prop_values = features[start_idx:end_idx]
+        plt.plot(range(1, 7), prop_values, marker='o', label=prop)
+
+    plt.title('Haralick Features')
+    plt.xlabel('Distance Index')
+    plt.ylabel('Value')
+    plt.xticks(range(1, 7), distances)
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
 def hu_moments(image):
     m = moments(image)
     # Calcular os momentos invariantes de Hu
@@ -227,7 +263,7 @@ def hu_moments(image):
         huMoments[i] = -np.sign(huMoments[i]) * np.log10(abs(huMoments[i]))
     return huMoments
 
-def processar_imagem(img):
+def processar_imagem_hu(img):
     gray_image = np.array(img.convert("L"))
     hsv_image = np.array(img.convert("HSV"))
     h_channel = hsv_image[:, :, 0]
@@ -240,18 +276,27 @@ def processar_imagem(img):
     hu_s = hu_moments(s_channel)
     hu_v = hu_moments(v_channel)
 
-    print("hu_gray: ", hu_gray)
-    print("hu_h: ", hu_h)
-    print("hu_s: ", hu_s)
-    print("hu_v: ", hu_v)
-
     return hu_gray, hu_h, hu_s, hu_v
-    
+
+def plot_hu_moments(img):
+    hu_gray, hu_h, hu_s, hu_v = processar_imagem_hu(img)
+    labels = ['Hu1', 'Hu2', 'Hu3', 'Hu4', 'Hu5', 'Hu6', 'Hu7']
+    channels = ['Gray', 'H', 'S', 'V']
+    hu_values = [hu_gray, hu_h, hu_s, hu_v]
+
+    plt.figure(figsize=(10, 6))
+
+    for i, channel in enumerate(channels):
+        plt.plot(labels, hu_values[i], marker='o', label=channel)
+
+    plt.title('Hu Moments')
+    plt.xlabel('Hu Moment')
+    plt.ylabel('Value')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
 def normalize_features(features):
     # Normalize the features for better visualization
     normalized = (features - np.min(features)) / (np.max(features) - np.min(features))
     return normalized
-
-def process_image(img):
-    image = transform(image).unsqueeze(0)  # Add a batch dimension
-    return image

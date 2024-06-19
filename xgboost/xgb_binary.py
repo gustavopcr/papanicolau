@@ -1,9 +1,11 @@
 import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
 import joblib
 from scipy.stats import randint, uniform
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Load the CSV file into a DataFrame
 data = pd.read_csv('csv/haralick_binary.csv')
@@ -58,6 +60,17 @@ y_pred = best_model.predict(X_test)
 # Evaluate model performance
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
+
+# Generate confusion matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+
+# Plot confusion matrix
+plt.figure(figsize=(8, 6))
+sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", xticklabels=['Class 0', 'Class 1'], yticklabels=['Class 0', 'Class 1'])
+plt.xlabel('Predicted labels')
+plt.ylabel('True labels')
+plt.title('Confusion Matrix')
+plt.savefig('confusion_matrix.png')  # Save the confusion matrix as a PNG file
 
 # Save the best model to a file
 joblib_file = "xgboost/xgboost_binary_model.pkl"
