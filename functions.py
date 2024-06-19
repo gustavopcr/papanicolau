@@ -23,15 +23,43 @@ import pandas as pd
 
 
 binary_pred = ['negative', 'positive']
-multiclass_pred = ['negative: ', 'ASC-US', 'ASC-H', 'LSIL', 'HSIL', 'SCC']
-xgboost_binary_path = "xgboost/xgboost_binary_model.pkl"
-xgboost_binary_model = joblib.load(xgboost_binary_path)
-print(f'Model loaded from {xgboost_binary_path}')
-feature_names = xgboost_binary_model.feature_names_in_
+multiclass_pred = ['negative', 'ASC-US', 'ASC-H', 'LSIL', 'HSIL', 'SCC']
 
+
+# Caminho dos arquivos de modelo
+xgboost_binary_path = "xgboost/xgboost_binary_model.pkl"
 xgboost_multi_path = "xgboost/xgboost_multiclass_model.pkl"
-xgboost_multi_model = joblib.load(xgboost_multi_path)
-print(f'Model loaded from {xgboost_multi_path}')
+
+# Inicializando variáveis de modelo
+xgboost_binary_model = None
+xgboost_multi_model = None
+
+# Tentando carregar o modelo binário
+try:
+    if os.path.exists(xgboost_binary_path):
+        xgboost_binary_model = joblib.load(xgboost_binary_path)
+        print(f'Model loaded from {xgboost_binary_path}')
+        feature_names = xgboost_binary_model.feature_names_in_
+    else:
+        print(f'Model file not found: {xgboost_binary_path}')
+except Exception as e:
+    print(f'Error loading binary model: {e}')
+
+# Tentando carregar o modelo multiclasse
+try:
+    if os.path.exists(xgboost_multi_path):
+        xgboost_multi_model = joblib.load(xgboost_multi_path)
+        print(f'Model loaded from {xgboost_multi_path}')
+    else:
+        print(f'Model file not found: {xgboost_multi_path}')
+except Exception as e:
+    print(f'Error loading multiclass model: {e}')
+
+# Verificando se os modelos foram carregados corretamente
+if xgboost_binary_model is None:
+    print('Binary model not loaded.')
+if xgboost_multi_model is None:
+    print('Multiclass model not loaded.')
 
 
 def process_xgboost_binary(img):

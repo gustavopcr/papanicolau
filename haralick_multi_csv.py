@@ -26,13 +26,13 @@ def main():
         header.append('label')
         writer.writerow(header)
 
-        for class_folder in os.listdir(output_folder):
-            class_folder_path = os.path.join(output_folder, class_folder)
-            if os.path.isdir(class_folder_path):
-                label = get_label(class_folder)
-                for filename in os.listdir(class_folder_path):
+        for folder in os.listdir(output_folder):
+            folder_path = os.path.join(output_folder, folder)
+            if os.path.isdir(folder_path):
+                label = get_label(folder)
+                for filename in os.listdir(folder_path):
                     if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
-                        img_path = os.path.join(class_folder_path, filename)
+                        img_path = os.path.join(folder_path, filename)
                         img = Image.open(img_path)
                         haralick_features = haralick(img)
                         row = []
@@ -41,7 +41,8 @@ def main():
                             end = (idx + 1) * 3
                             row.extend(haralick_features[start:end])
                         row.append(label)
-                        writer.writerow([filename] + row)
+                        # Prepend directory name to filename for uniqueness
+                        writer.writerow([os.path.join(folder, filename)] + row)
 
 if __name__ == "__main__":
     main()
