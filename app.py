@@ -17,9 +17,6 @@ import matplotlib.image as mpimg
 filePath = ""
 img = ""
 
-def say_hello():
-    print("Hello!")
-
 def open_image(title, img):
     imagen_array = np.array(img)
     fig, ax = plt.subplots()
@@ -28,7 +25,7 @@ def open_image(title, img):
     ax.axis('off')  # Ocultar os eixos
     plt.show()
     # Adicionar a figura à janela Toplevel
-    canvas = FigureCanvasTkAgg(fig, master=top)
+    canvas = FigureCanvasTkAgg(fig, master=root)
     canvas.draw()
     canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
@@ -140,12 +137,6 @@ file_menu.add_command(label="Efficient Net Multiclasse", command=lambda: show_re
 file_menu.add_separator()
 file_menu.add_command(label="Sair", command=root.quit)
 menu_bar.add_cascade(label="Menu", menu=file_menu)
-
-# Adicionar um menu "Editar"
-edit_menu = Menu(menu_bar, tearoff=0)
-edit_menu.add_command(label="Desfazer", command=say_hello)
-edit_menu.add_command(label="Refazer", command=say_hello)
-menu_bar.add_cascade(label="Editar", menu=edit_menu)
 
 # Configurar a janela para usar o menu
 root.config(menu=menu_bar)
