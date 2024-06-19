@@ -23,7 +23,7 @@ import pandas as pd
 
 
 binary_pred = ['negative', 'positive']
-multiclass_pred = ['negative: ', 'ASC-US', 'ASC-H', 'LSIL', 'HSIL', 'SCC']
+multiclass_pred = ['negative', 'ASC-US', 'ASC-H', 'LSIL', 'HSIL', 'SCC']
 xgboost_binary_path = "xgboost/xgboost_binary_model.pkl"
 xgboost_binary_model = joblib.load(xgboost_binary_path)
 print(f'Model loaded from {xgboost_binary_path}')

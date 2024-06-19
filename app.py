@@ -18,8 +18,6 @@ filePath = ""
 img = ""
 original_img = None  # Variável para armazenar a imagem original
 
-def say_hello():
-    print("Hello!")
 
 def open_image(title, img):
     if not img:
@@ -118,12 +116,52 @@ def color_histogram(img):
     plt.show()
 
 def show_result(result):
-    # Show popup message with prediction result
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    messagebox.showinfo("Prediction Result", f"A imagem é da classe: {result}")
-    root.destroy()  # Destroy the hidden root window after showing the popup
+    # Criar uma nova janela para exibir o resultado
+    result_window = tk.Toplevel(root)
+    result_window.title("Resultado da Predição")
+    result_window.geometry("400x300")
+    
+    # Estilo da janela de resultado
+    style = ttk.Style(result_window)
+    style.configure('TLabel', font=("Helvetica", 14), padding=10)
+    message = ''
+    # Mensagem personalizada
+    match result:
+        case 'negative':
+            message = "Esta imagem não parece ter possíveis patógenos malignos associados ao câncer."
+            bg_color = "#c8e6c9"
+            
+        case 'positive':
+            message = "Esta imagem pode conter patógenos malignos. Consulte um especialista para uma avaliação mais detalhada."
+            bg_color = "#ffcdd2"
 
+        case 'HSIL':
+            message = "Possíveis lesões escamosas intraepiteliais de alto grau detectadas(HSIL). Consulte um especialista imediatamente."
+            bg_color = "#ffccbc"
+        
+        case 'SCC':
+            message = "Possível carcinoma de células escamosas detectado(SCC). Consulte um especialista imediatamente."
+            bg_color = "#ff8a80"
+        
+        case 'LSIL':
+            message = "Lesões escamosas intraepiteliais de baixo grau detectadas(LSIL). Consulte um especialista imediatamente."
+            bg_color = "#ffecb3"
+        
+        case 'ASC-H':
+            message = "Células escamosas atípicas encontradas (ASC-H).Consulte um especialista imediatamente."
+            bg_color = "#ffab91"
+            
+
+
+    result_window.configure(bg=bg_color)
+
+    # Label para exibir a mensagem
+    label_message = ttk.Label(result_window, text=message, wraplength=350, background=bg_color)
+    label_message.pack(expand=True)
+
+    # Botão para fechar a janela de resultado
+    button_close = ttk.Button(result_window, text="Fechar", command=result_window.destroy)
+    button_close.pack(pady=20)
 # Criar a janela principal
 root = tk.Tk()
 root.title("Seletor de Imagem")
@@ -134,7 +172,7 @@ style = ttk.Style(root)
 style.theme_use('clam')  # Use the 'clam' theme
 
 # Cabeçalho
-header = ttk.Label(root, text="Bem-vindo ao Seletor de Imagem", font=("Helvetica", 18), padding=10)
+header = ttk.Label(root, text="Papanicolau", font=("Helvetica", 18), padding=10)
 header.pack(pady=10)
 
 button = ttk.Button(root, text="Selecionar imagem", command=image_path)
@@ -161,8 +199,7 @@ menu_bar.add_cascade(label="Menu", menu=file_menu)
 
 # Adicionar um menu "Editar"
 edit_menu = Menu(menu_bar, tearoff=0)
-edit_menu.add_command(label="Desfazer", command=say_hello)
-edit_menu.add_command(label="Refazer", command=say_hello)
+
 menu_bar.add_cascade(label="Editar", menu=edit_menu)
 
 # Configurar a janela para usar o menu
