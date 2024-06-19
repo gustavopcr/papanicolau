@@ -30,6 +30,6 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
 
 # Save the model to a file
-joblib_file = "xgboost_multiclass_model.pkl"
+joblib_file = "xgboost/xgboost_multiclass_model.pkl"
 joblib.dump(model, joblib_file)
 print(f'Model saved to {joblib_file}')
